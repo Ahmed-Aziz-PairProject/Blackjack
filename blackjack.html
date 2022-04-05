@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="blackjack.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackjack</title>
+  </head>
+  <body>
+    <div id="reset">
+      <button style="display: none" id="reload">NEW GAME</button>
+    </div>
+    <audio id="gamemusic" src="./a-promise.mp3"></audio>
+    <audio id="winmusic" src="./WINSONG.mp3"></audio>
+    <audio id="losemusic" src="./LOSESONG.mp3"></audio>
+    <h1 class="welcome">Welcome To BlackJack Avengers</h1>
+    <a class="btn" href="#">PLAY</a>
+    <div id="hid" style="display: none">
+      <h6>
+        Dealer Cards
+        <text id="dealersan">:</text>
+      </h6>
+      <div id="DealerCards">
+        <img id="faceDown" src="./Deck/DeckCover.jpg" />
+      </div>
+      <div id="resultscreen"></div>
+      <h6>
+        My Cards
+        <text id="muhcards">:</text>
+      </h6>
+      <div id="MyCards"></div>
+
+      <br />
+      <button class="btns" id="hit">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text"> HIT </span>
+      </button>
+      <button class="btns" id="stand">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text"> STAND </span>
+      </button>
+      <button class="btns" id="bet">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text"> BET </span>
+      </button>
+      <br />
+      <input type="text" id="betvalue" />
+      <br />
+      <p id="value"></p>
+    </div>
+    <script src="blackjack.js" ;></script>
+  </body>
+</html>
